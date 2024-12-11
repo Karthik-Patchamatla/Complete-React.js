@@ -1,0 +1,341 @@
+React Setup:
+
+1. npm create vite@latest.
+2. Create a React Project Folder and select the React and JavaScript.
+3. cd React-Project-Folder.
+4. npm install.
+5. npm run dev (Start the React Server).
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+React:
+
+1. React apps are made out of components. A component is a piece of the UI (user interface) that has its own logic and appearance. 
+   A component can be as small as a button, or as large as an entire page.
+
+2. Basic React Code:
+
+    function MyButton() {
+        return (
+            <button>
+            I'm a button
+            </button>
+        );
+    }
+
+    export default function MyApp() {
+        return (
+            <div>
+            <h1>Welcome to my app</h1>
+            <MyButton />
+            </div>
+        );
+    }
+
+3. Notice: <MyButton /> starts with a capital letter. That’s how you know it’s a React component. React component names must
+           always start with a capital letter, while HTML tags must be lowercase.
+
+4. The markup syntax you’ve seen above is called JSX(JavaScript XML)
+
+5. JSX is a syntax extension for JavaScript. It allows you to write HTML in your JavaScript files.
+
+6. Babel is a tool that converts JSX into regular JavaScript that can be executed by the browser.
+
+7. JSX is optional in React. You can write React code without JSX, but it’s much more common.
+
+8. Fragment : React Fragment is a special type of component that allows you to group a list of children without adding.
+
+9. Fragment denoted as <></> is used to group a list of children without adding extra nodes.
+
+10. App Component : The App component is the top-level component in a React application. It is the entry point for Project.
+
+11. function App() {
+        return (
+            <div>
+            <p>Hello Karthik Varma</p>
+            </div>
+        )
+    }
+
+    export default App
+
+12. Our 1st Component: 
+
+    function MyComponent() {
+        return (
+            <div>
+                <p> Hello World..! </p>
+            </div>
+        );
+    }
+
+    export default MyComponent; (export default keyword is used to export the component).
+
+13. import a component from another file and use it in a function component:
+
+    import MyComponent from './MyComponent.js';
+    function App() {
+        return (
+            <>
+                </MyComponent>
+            </>
+        );
+    }
+
+14. The Rules of JSX:
+    - JSX is case-sensitive.
+    - Return a single root element.
+    - Close all tags.
+    - camelCase most of the things (for all HTML attributes).
+
+15. JSX with curly braces:
+    In JSX, curly braces {} are used to embed JavaScript expressions within the markup. This allows you to dynamically insert values,
+    perform calculations, or call functions directly in your JSX code. Anything inside the braces is treated as JavaScript.
+
+16. React Props:
+
+    1. Props is short for "properties" and is a way of passing data from a parent component to a child component.
+
+    2. Props are used to customize the behavior of a component.
+
+    3. Props can be any type of data, including strings, numbers, booleans, arrays, objects, and even functions.
+
+    4. Props are passed to a component as attributes on the JSX element.
+
+    5. Props can be accessed within a component using the props object.
+
+    Example:
+
+    function MyComponent(props) {
+        return (
+            <div>
+                <p> Hello, {props.name}! </p>
+                <p> Your age is {props.age} </p>
+            </div>
+        );
+    }
+
+    function App() {
+        return (
+            <div>
+                <MyComponent name="John Doe" age={30} />
+            </div>
+        );
+    }
+
+17. Passing array of objects as props:
+    function MyComponent(props) {
+        return (
+            <div>
+                <h1>Users:</h1>
+                <ul>
+                    {props.users.map(user => (
+                        <li key={user.id}>{user.name}</li>
+                    ))}
+                </ul>
+            </div>
+        );
+    }
+
+    export default function App() {
+        const users = [
+            { id: 1, name: 'Karthik' },
+            { id: 2, name: 'Sethu' },
+            { id: 3, name: 'Adhiraj' }
+        ];
+
+        return (
+            <div>
+                <MyComponent users={users} />
+            </div>
+        );
+    }
+
+18. Event Handling in React:
+
+    1. Event handling in React is similar to handling events in DOM elements.
+
+    2. In React, event handling is done by passing a function as a prop to the element.
+
+    3. The function is then called when the event occurs.
+
+    Example:
+
+    ```javascript
+    function MyButton() {
+        function handleClick() {
+            console.log('Button clicked!');
+        }
+
+        return (
+            <button onClick={handleClick}>
+                Click me!
+            </button>
+        );
+    }
+    ```
+
+    4. Event handlers can also be defined as arrow functions.
+
+    ```javascript
+    function MyButton() {
+        return (
+            <button onClick={() => console.log('Button clicked!')}>
+                Click me!
+            </button>
+        );
+    }
+    ```
+
+    5. Event handlers can also be passed as props to child components.
+
+    ```javascript
+    function MyButton(props) {
+        return (
+            <button onClick={props.onClick}>
+                Click me!
+            </button>
+        );
+    }
+
+    function App() {
+        function handleClick() {
+            console.log('Button clicked!');
+        }
+
+        return (
+            <div>
+                <MyButton onClick={handleClick} />
+            </div>
+        );
+    }
+    ```
+
+    6. React events are not the same as DOM events. React events are synthetic events, which are cross-browser wrappers around the browser's native event.
+
+    7. React events are not attached to the DOM elements, but are attached to the document.
+
+    8. React events are not removed when the component is unmounted.
+
+    9. React events can be prevented from propagating by calling the `stopPropagation()` method.
+
+    ```javascript
+    function MyButton() {
+        function handleClick(event) {
+            event.stopPropagation();
+            console.log('Button clicked!');
+        }
+
+        return (
+            <button onClick={handleClick}>
+                Click me!
+            </button>
+        );
+    }
+    ```
+
+    10. React events can be prevented from default behavior by calling the `preventDefault()` method.
+
+    ```javascript
+    function MyLink() {
+        function handleClick(event) {
+            event.preventDefault();
+            console.log('Link clicked!');
+        }
+
+        return (
+            <a href="#" onClick={handleClick}>
+                Click me!
+            </a>
+        );
+    }
+```
+
+19. hooks in the React:
+
+    1. useState - Adds state to functional components, allowing them to have memory and change over time.
+
+    2. useEffect - Handles side effects, such as setting up a subscription or fetching data, and cleans up after them.
+
+    3. useContext - Subscribes to context changes, allowing components to access context (shared state) without passing props down manually.
+
+    4. useReducer - An alternative to useState, used for managing more complex state logic.
+
+    5. useCallback - Memoizes a function, preventing it from being recreated unnecessarily, which can improve performance.
+
+    6. useMemo - Memoizes a value, preventing it from being recalculated unnecessarily, which can improve performance.
+
+    7. useRef - Creates a reference to a DOM element or a value that persists across renders.
+
+    8. useImperativeHandle - Customizes the instance value that is exposed to parent components when using ref.
+
+    9. useLayoutEffect - Similar to useEffect, but fires synchronously after all DOM mutations.
+
+    10. useTransition - Manages state transitions, allowing components to wait for content to load before rendering.
+
+    11. useDeferredValue - Defers updating the UI until the next render, allowing components to wait for content to load.
+
+    12. useId - Generates a unique ID that can be used to identify elements in the DOM.
+
+    13. useInsertionEffect - Fires after all DOM mutations, but before the browser paints, allowing components to make DOM mutations.
+
+    14. useDebugValue - Displays a label for custom hooks in React DevTools.
+
+    15. useSyncExternalStore - Subscribes to external stores, allowing components to access and update external state.
+
+19.1. useState Hook: 
+
+    ```Like Button
+    import like from "./assets/like.svg";
+    import liked from "./assets/liked.svg";
+    import React, { useState } from 'react';
+
+    function App() {
+        const [isLiked, setIsLiked] = useState(false);
+        function handleLike() {
+            setIsLiked(!isLiked);
+        }
+
+        return(
+            <div>
+            <p>Like Button</p>
+            {isLiked ? <img src={liked} alt="liked" onClick={handleLike}/> : <img src={like} alt="like" onClick={handleLike}/>}
+            </div>
+        );
+    }
+
+    export default App;
+    ```
+    - The useState hook is a fundamental concept in React that allows functional components to have memory and change over time. 
+      It is used to add state to functional components, enabling them to store and update values in response to user interactions or other events. 
+      The useState hook takes an initial value as an argument and returns an array with two elements: 
+      the current state value and an update function that can be used to modify the state. 
+      This hook is commonly used to manage simple state changes, such as toggling a button or updating a counter.
+
+19.2. useEffect Hook:
+```javascript
+
+// The useEffect hook is used to handle side effects in functional components, 
+// such as setting up a subscription/timing, fetching data (api calls), or updating the DOM. 
+// It takes a function as an argument, which is executed after rendering, 
+// and an optional array of dependencies, which determines when the effect is re-run.
+
+import React, { useState, useEffect } from 'react';
+
+function App() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        document.title = `Count: ${count}`;
+    }, [count]);
+
+    return (
+        <div>
+            <p>Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>Increment</button>
+        </div>
+    );
+}
+
+export default App;
+```
