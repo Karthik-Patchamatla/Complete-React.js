@@ -1,0 +1,1243 @@
+TailwindCSS Setup:
+    ```
+    - npm init -y
+
+    - npm install -D tailwindcss postcss autoprefixer vite
+
+    - npx tailwind init -p
+
+    - Create a CSS file:
+        - @tailwind base;
+          @tailwind components;
+          @tailwind utilities;
+
+    - In our tailwind.config.js file replace the content: [] with the 
+        content[
+            './index.html',
+            './src/**/*.{js,ts,jsx,tsx}'
+        ]
+    ```
+
+About TailwindCSS:
+```
+// TailwindCSS is a utility-first CSS framework for building custom user interfaces.
+// It allows developers to write more concise and maintainable CSS code.
+// TailwindCSS provides a set of pre-defined classes that can be used to style HTML elements.
+// It also includes a configuration file that allows developers to customize the framework to their needs.
+// The framework is highly customizable and can be extended with custom plugins and themes.
+// TailwindCSS is widely used in modern web development and is particularly popular among developers who use React, Vue, and other JavaScript frameworks.
+```
+
+Why TailwindCSS is better than Bootstrap:
+```
+// TailwindCSS is more customizable than Bootstrap, allowing developers to create a unique look and feel for their application.
+// TailwindCSS has a more concise and maintainable syntax than Bootstrap, making it easier to write and debug CSS code.
+// TailwindCSS is more flexible than Bootstrap, allowing developers to use it with a variety of front-end frameworks and libraries.
+// TailwindCSS has better support for modern CSS features than Bootstrap, making it a better choice for developers who want to take advantage of the latest CSS technologies.
+// TailwindCSS has a more active and supportive community than Bootstrap, making it easier for developers to find help and resources when they need them.
+// TailwindCSS is more modular than Bootstrap, allowing developers to include only the components and features they need in their application.
+// TailwindCSS has better performance than Bootstrap, making it a better choice for developers who want to create fast and responsive applications.
+// TailwindCSS is more accessible than Bootstrap, making it a better choice for developers who want to create applications that are usable by everyone.
+```
+
+TYPOGRAPHY:
+```
+
+Font-Family:
+```
+// Font Family in TailwindCSS is used to set the font family of an element.
+// It provides a set of pre-defined classes that can be used to set the font family.
+// For example, to set the font family to sans-serif, you can use the class 'font-sans'.
+// To set the font family to serif, you can use the class 'font-serif'.
+// To set the font family to monospace, you can use the class 'font-mono'.
+// You can also use the class 'font-sans' with a specific font family, such as 'font-sans font-family: Arial, sans-serif'.
+// Here is an example of how to use font family in TailwindCSS:
+    <p class="font-sans">This is a paragraph with sans-serif font family.</p>
+    <p class="font-serif">This is a paragraph with serif font family.</p>
+    <p class="font-mono">This is a paragraph with monospace font family.</p>
+```
+
+
+Font-Size:
+```
+// Font Size in TailwindCSS is used to set the font size of an element.
+// It provides a set of pre-defined classes that can be used to set the font size.
+// For example, to set the font size to a specific size, you can use the class 'text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl', 'text-2xl', etc.
+// You can also use the class 'text-{size}' with a specific font size, such as 'text-3xl' for a font size of 24px.
+// Here is an example of how to use font size in TailwindCSS:
+    <p class="text-xs">This is a paragraph with extra small font size.</p>
+    <p class="text-sm">This is a paragraph with small font size.</p>
+    <p class="text-base">This is a paragraph with base font size.</p>
+    <p class="text-lg">This is a paragraph with large font size.</p>
+    <p class="text-xl">This is a paragraph with extra large font size.</p>
+    <p class="text-2xl">This is a paragraph with 2xl font size.</p>
+    <p class="text-3xl">This is a paragraph with 3xl font size.</p>
+    <p class="text-4xl">This is a paragraph with 4xl font size.</p>
+    <p class="text-5xl">This is a paragraph with 5xl font size.</p>
+    <p class="text-6xl">This is a paragraph with 6xl font size.</p>
+    <p class="text-7xl">This is a paragraph with 7xl font size.</p>
+    <p class="text-8xl">This is a paragraph with 8xl font size.</p>
+    <p class="text-9xl">This is a paragraph with 9xl font size.</p>
+```
+
+
+Font-Style:
+```
+// Font Style in TailwindCSS is used to set the font style of an element.
+// It provides a set of pre-defined classes that can be used to set the font style.
+// For example, to set the font style to italic, you can use the class 'italic'.
+// To set the font style to normal, you can use the class 'not-italic'.
+// Here is an example of how to use font style in TailwindCSS:
+    <p class="italic">This is a paragraph with italic font style.</p>
+    <p class="not-italic">This is a paragraph with normal font style.</p>
+```
+
+
+Font-Weight:
+```
+// Font Weight in TailwindCSS is used to set the font weight of an element.
+// It provides a set of pre-defined classes that can be used to set the font weight.
+// For example, to set the font weight to thin, you can use the class 'font-thin'.
+// To set the font weight to extra light, you can use the class 'font-extralight'.
+// To set the font weight to light, you can use the class 'font-light'.
+// To set the font weight to normal, you can use the class 'font-normal'.
+// To set the font weight to medium, you can use the class 'font-medium'.
+// To set the font weight to semibold, you can use the class 'font-semibold'.
+// To set the font weight to bold, you can use the class 'font-bold'.
+// To set the font weight to extrabold, you can use the class 'font-extrabold'.
+// To set the font weight to black, you can use the class 'font-black'.
+// Here is an example of how to use font weight in TailwindCSS:
+    <p class="font-thin">This is a paragraph with thin font weight.</p>
+    <p class="font-extralight">This is a paragraph with extra light font weight.</p>
+    <p class="font-light">This is a paragraph with light font weight.</p>
+    <p class="font-normal">This is a paragraph with normal font weight.</p>
+    <p class="font-medium">This is a paragraph with medium font weight.</p>
+    <p class="font-semibold">This is a paragraph with semibold font weight.</p>
+    <p class="font-bold">This is a paragraph with bold font weight.</p>
+    <p class="font-extrabold">This is a paragraph with extrabold font weight.</p>
+    <p class="font-black">This is a paragraph with black font weight.</p>
+```
+
+
+Letter-Spacing:
+```
+// Letter Spacing in TailwindCSS is used to set the letter spacing of an element.
+// It provides a set of pre-defined classes that can be used to set the letter spacing.
+// For example, to set the letter spacing to a specific size, you can use the class 'tracking-tighter', 'tracking-tight', 'tracking-normal', 'tracking-wide', 'tracking-wider', 'tracking-widest'.
+// You can also use the class 'tracking-{size}' with a specific letter spacing, such as 'tracking-1' for a letter spacing of 0.025em.
+// Here is an example of how to use letter spacing in TailwindCSS:
+    <p class="tracking-tighter">This is a paragraph with tighter letter spacing.</p>
+    <p class="tracking-tight">This is a paragraph with tight letter spacing.</p>
+    <p class="tracking-normal">This is a paragraph with normal letter spacing.</p>
+    <p class="tracking-wide">This is a paragraph with wide letter spacing.</p>
+    <p class="tracking-wider">This is a paragraph with wider letter spacing.</p>
+    <p class="tracking-widest">This is a paragraph with widest letter spacing.</p>
+```
+
+
+Line-Height:
+```
+// Line Height in TailwindCSS is used to set the line height of an element.
+// It provides a set of pre-defined classes that can be used to set the line height.
+// For example, to set the line height to a specific size, you can use the class 'leading-3', 'leading-4', 'leading-5', 'leading-6', 'leading-7', 'leading-8', 'leading-9', 'leading-10'.
+// You can also use the class 'leading-{size}' with a specific line height, such as 'leading-10' for a line height of 2.5rem.
+// Here is an example of how to use line height in TailwindCSS:
+    <p class="leading-3">This is a paragraph with line height of 3.</p>
+    <p class="leading-4">This is a paragraph with line height of 4.</p>
+    <p class="leading-5">This is a paragraph with line height of 5.</p>
+    <p class="leading-6">This is a paragraph with line height of 6.</p>
+    <p class="leading-7">This is a paragraph with line height of 7.</p>
+    <p class="leading-8">This is a paragraph with line height of 8.</p>
+    <p class="leading-9">This is a paragraph with line height of 9.</p>
+    <p class="leading-10">This is a paragraph with line height of 10.</p>
+'''
+
+
+Text-Decoration:
+```
+// Text Decoration in TailwindCSS is used to set the text decoration of an element.
+// It provides a set of pre-defined classes that can be used to set the text decoration.
+// For example, to set the text decoration to none, you can use the class 'underline'.
+// To set the text decoration to underline, you can use the class 'underline'.
+// To set the text decoration to line-through, you can use the class 'line-through'.
+// To set the text decoration to no underline, you can use the class 'no-underline'.
+// Here is an example of how to use text decoration in TailwindCSS:
+    <p class="underline">This is a paragraph with underline text decoration.</p>
+    <p class="line-through">This is a paragraph with line-through text decoration.</p>
+    <p class="no-underline">This is a paragraph with no underline text decoration.</p>
+```
+
+
+Text-Decoration-Style:
+```
+// Text Decoration Style in TailwindCSS is used to set the style of the text decoration of an element.
+// It provides a set of pre-defined classes that can be used to set the text decoration style.
+// For example, to set the text decoration style to solid, you can use the class 'decoration-solid'.
+// To set the text decoration style to double, you can use the class 'decoration-double'.
+// To set the text decoration style to dotted, you can use the class 'decoration-dotted'.
+// To set the text decoration style to dashed, you can use the class 'decoration-dashed'.
+// To set the text decoration style to wavy, you can use the class 'decoration-wavy'.
+// Here is an example of how to use text decoration style in TailwindCSS:
+    <p class="underline decoration-solid">This is a paragraph with solid underline text decoration style.</p>
+    <p class="underline decoration-double">This is a paragraph with double underline text decoration style.</p>
+    <p class="underline decoration-dotted">This is a paragraph with dotted underline text decoration style.</p>
+    <p class="underline decoration-dashed">This is a paragraph with dashed underline text decoration style.</p>
+    <p class="underline decoration-wavy">This is a paragraph with wavy underline text decoration style.</p>
+```
+
+
+Text-Decoration-Color:
+```
+// Text Decoration Color in TailwindCSS is used to set the color of the text decoration of an element.
+// It provides a set of pre-defined classes that can be used to set the text decoration color.
+// For example, to set the text decoration color to a specific color, you can use the class 'decoration-red-500'.
+// To set the text decoration color to a specific color with opacity, you can use the class 'decoration-red-500/50'.
+// Here is an example of how to use text decoration color in TailwindCSS:
+    <p class="underline decoration-red-500">This is a paragraph with red underline text decoration color.</p>
+    <p class="underline decoration-blue-500/50">This is a paragraph with blue underline text decoration color with 50% opacity.</p>
+    <p class="underline decoration-green-500">This is a paragraph with green underline text decoration color.</p>
+    <p class="underline decoration-yellow-500">This is a paragraph with yellow underline text decoration color.</p>
+    <p class="underline decoration-purple-500">This is a paragraph with purple underline text decoration color.</p>
+```
+
+
+Text-Decoration-Thickness:
+```
+// Text Decoration Thickness in TailwindCSS is used to set the thickness of the text decoration of an element.
+// It provides a set of pre-defined classes that can be used to set the text decoration thickness.
+// For example, to set the text decoration thickness to a specific size, you can use the class 'decoration-1', 'decoration-2', 'decoration-4', 'decoration-8'.
+// You can also use the class 'decoration-{size}' with a specific text decoration thickness, such as 'decoration-1' for a text decoration thickness of 1px.
+// Here is an example of how to use text decoration thickness in TailwindCSS:
+    <p class="underline decoration-1">This is a paragraph with underline text decoration thickness of 1px.</p>
+    <p class="underline decoration-2">This is a paragraph with underline text decoration thickness of 2px.</p>
+    <p class="underline decoration-4">This is a paragraph with underline text decoration thickness of 4px.</p>
+    <p class="underline decoration-8">This is a paragraph with underline text decoration thickness of 8px.</p>
+```
+
+
+SIZING:
+```
+
+Width:
+```
+// Width in TailwindCSS is used to set the width of an element.
+// It provides a set of pre-defined classes that can be used to set the width.
+// For example, to set the width to a specific size, you can use the class 'w-{size}'.
+// You can also use the class 'w-{size}' with a specific width, such as 'w-1/2' for a width of 50%.
+// Here is an example of how to use width in TailwindCSS:
+    <div class="w-full">This is a div with full width.</div>
+    <div class="w-1/2">This is a div with half width.</div>
+    <div class="w-1/3">This is a div with one-third width.</div>
+    <div class="w-2/3">This is a div with two-thirds width.</div>
+    <div class="w-1/4">This is a div with one-fourth width.</div>
+    <div class="w-2/4">This is a div with two-fourths width.</div>
+    <div class="w-3/4">This is a div with three-fourths width.</div>
+    <div class="w-1/5">This is a div with one-fifth width.</div>
+    <div class="w-2/5">This is a div with two-fifths width.</div>
+    <div class="w-3/5">This is a div with three-fifths width.</div>
+    <div class="w-4/5">This is a div with four-fifths width.</div>
+    <div class="w-1/6">This is a div with one-sixth width.</div>
+    <div class="w-2/6">This is a div with two-sixths width.</div>
+    <div class="w-3/6">This is a div with three-sixths width.</div>
+    <div class="w-4/6">This is a div with four-sixths width.</div>
+    <div class="w-5/6">This is a div with five-sixths width.</div>
+    <div class="w-1/12">This is a div with one-twelfth width.</div>
+    <div class="w-2/12">This is a div with two-twelfths width.</div>
+    <div class="w-3/12">This is a div with three-twelfths width.</div>
+    <div class="w-4/12">This is a div with four-twelfths width.</div>
+    <div class="w-5/12">This is a div with five-twelfths width.</div>
+    <div class="w-6/12">This is a div with six-twelfths width.</div>
+    <div class="w-7/12">This is a div with seven-twelfths width.</div>
+    <div class="w-8/12">This is a div with eight-twelfths width.</div>
+    <div class="w-9/12">This is a div with nine-twelfths width.</div>
+    <div class="w-10/12">This is a div with ten-twelfths width.</div>
+    <div class="w-11/12">This is a div with eleven-twelfths width.</div>
+    <div class="w-screen">This is a div with screen width.</div>
+    <div class="w-min">This is a div with minimum width.</div>
+    <div class="w-max">This is a div with maximum width.</div>
+    <div class="w-xs">This is a div with extra small width.</div>
+    <div class="w-sm">This is a div with small width.</div>
+    <div class="w-md">This is a div with medium width.</div>
+    <div class="w-lg">This is a div with large width.</div>
+    <div class="w-xl">This is a div with extra large width.</div>
+    <div class="w-2xl">This is a div with 2xl width.</div>
+    <div class="w-3xl">This is a div with 3xl width.</div>
+    <div class="w-4xl">This is a div with 4xl width.</div>
+    <div class="w-5xl">This is a div with 5xl width.</div>
+    <div class="w-6xl">This is a div with 6xl width.</div>
+    <div class="w-7xl">This is a div with 7xl width.</div>
+    <div class="w-8xl">This is a div with 8xl width.</div>
+    <div class="w-9xl">This is a div with 9xl width.</div>
+    <div class="w-10xl">This is a div with 10xl width.</div>
+    <div class="w-11xl">This is a div with 11xl width.</div>
+    <div class="w-12xl">This is a div with 12xl width.</div>
+```
+
+
+Min-Width:
+```
+// Min-Width in TailwindCSS is used to set the minimum width of an element.
+// It provides a set of pre-defined classes that can be used to set the minimum width.
+// For example, to set the minimum width to a specific size, you can use the class 'min-w-{size}'.
+// You can also use the class 'min-w-{size}' with a specific minimum width, such as 'min-w-1/2' for a minimum width of 50%.
+// Here is an example of how to use minimum width in TailwindCSS:
+    <div class="min-w-full">This is a div with full minimum width.</div>
+    <div class="min-w-1/2">This is a div with half minimum width.</div>
+    <div class="min-w-1/3">This is a div with one-third minimum width.</div>
+    <div class="min-w-2/3">This is a div with two-thirds minimum width.</div>
+    <div class="min-w-1/4">This is a div with one-fourth minimum width.</div>
+    <div class="min-w-2/4">This is a div with two-fourths minimum width.</div>
+    <div class="min-w-3/4">This is a div with three-fourths minimum width.</div>
+    <div class="min-w-1/5">This is a div with one-fifth minimum width.</div>
+    <div class="min-w-2/5">This is a div with two-fifths minimum width.</div>
+    <div class="min-w-3/5">This is a div with three-fifths minimum width.</div>
+    <div class="min-w-4/5">This is a div with four-fifths minimum width.</div>
+    <div class="min-w-1/6">This is a div with one-sixth minimum width.</div>
+    <div class="min-w-2/6">This is a div with two-sixths minimum width.</div>
+    <div class="min-w-3/6">This is a div with three-sixths minimum width.</div>
+    <div class="min-w-4/6">This is a div with four-sixths minimum width.</div>
+    <div class="min-w-5/6">This is a div with five-sixths minimum width.</div>
+    <div class="min-w-1/12">This is a div with one-twelfth minimum width.</div>
+    <div class="min-w-2/12">This is a div with two-twelfths minimum width.</div>
+    <div class="min-w-3/12">This is a div with three-twelfths minimum width.</div>
+    <div class="min-w-4/12">This is a div with four-twelfths minimum width.</div>
+    <div class="min-w-5/12">This is a div with five-twelfths minimum width.</div>
+    <div class="min-w-6/12">This is a div with six-twelfths minimum width.</div>
+    <div class="min-w-7/12">This is a div with seven-twelfths minimum width.</div>
+    <div class="min-w-8/12">This is a div with eight-twelfths minimum width.</div>
+    <div class="min-w-9/12">This is a div with nine-twelfths minimum width.</div>
+    <div class="min-w-10/12">This is a div with ten-twelfths minimum width.</div>
+    <div class="min-w-11/12">This is a div with eleven-twelfths minimum width.</div>
+    <div class="min-w-screen">This is a div with screen minimum width.</div>
+    <div class="min-w-min">This is a div with minimum minimum width.</div>
+    <div class="min-w-max">This is a div with maximum minimum width.</div>
+    <div class="min-w-xs">This is a div with extra small minimum width.</div>
+    <div class="min-w-sm">This is a div with small minimum width.</div>
+    <div class="min-w-md">This is a div with medium minimum width.</div>
+    <div class="min-w-lg">This is a div with large minimum width.</div>
+    <div class="min-w-xl">This is a div with extra large minimum width.</div>
+    <div class="min-w-2xl">This is a div with 2xl minimum width.</div>
+    <div class="min-w-3xl">This is a div with 3xl minimum width.</div>
+    <div class="min-w-4xl">This is a div with 4xl minimum width.</div>
+    <div class="min-w-5xl">This is a div with 5xl minimum width.</div>
+    <div class="min-w-6xl">This is a div with 6xl minimum width.</div>
+    <div class="min-w-7xl">This is a div with 7xl minimum width.</div>
+    <div class="min-w-8xl">This is a div with 8xl minimum width.</div>
+    <div class="min-w-9xl">This is a div with 9xl minimum width.</div>
+    <div class="min-w-10xl">This is a div with 10xl minimum width.</div>
+    <div class="min-w-11xl">This is a div with 11xl minimum width.</div>
+    <div class="min-w-12xl">This is a div with 12xl minimum width.</div>
+```
+
+
+Max-Width:
+```
+// Max-Width in TailwindCSS is used to set the maximum width of an element.
+// It provides a set of pre-defined classes that can be used to set the maximum width.
+// For example, to set the maximum width to a specific size, you can use the class 'max-w-{size}'.
+// You can also use the class 'max-w-{size}' with a specific maximum width, such as 'max-w-1/2' for a maximum width of 50%.
+// Here is an example of how to use maximum width in TailwindCSS:
+    <div class="max-w-full">This is a div with full maximum width.</div>
+    <div class="max-w-1/2">This is a div with half maximum width.</div>
+    <div class="max-w-1/3">This is a div with one-third maximum width.</div>
+    <div class="max-w-2/3">This is a div with two-thirds maximum width.</div>
+    <div class="max-w-1/4">This is a div with one-fourth maximum width.</div>
+    <div class="max-w-2/4">This is a div with two-fourths maximum width.</div>
+    <div class="max-w-3/4">This is a div with three-fourths maximum width.</div>
+    <div class="max-w-1/5">This is a div with one-fifth maximum width.</div>
+    <div class="max-w-2/5">This is a div with two-fifths maximum width.</div>
+    <div class="max-w-3/5">This is a div with three-fifths maximum width.</div>
+    <div class="max-w-4/5">This is a div with four-fifths maximum width.</div>
+    <div class="max-w-1/6">This is a div with one-sixth maximum width.</div>
+    <div class="max-w-2/6">This is a div with two-sixths maximum width.</div>
+    <div class="max-w-3/6">This is a div with three-sixths maximum width.</div>
+    <div class="max-w-4/6">This is a div with four-sixths maximum width.</div>
+    <div class="max-w-5/6">This is a div with five-sixths maximum width.</div>
+    <div class="max-w-1/12">This is a div with one-twelfth maximum width.</div>
+    <div class="max-w-2/12">This is a div with two-twelfths maximum width.</div>
+    <div class="max-w-3/12">This is a div with three-twelfths maximum width.</div>
+    <div class="max-w-4/12">This is a div with four-twelfths maximum width.</div>
+    <div class="max-w-5/12">This is a div with five-twelfths maximum width.</div>
+    <div class="max-w-6/12">This is a div with six-twelfths maximum width.</div>
+    <div class="max-w-7/12">This is a div with seven-twelfths maximum width.</div>
+    <div class="max-w-8/12">This is a div with eight-twelfths maximum width.</div>
+    <div class="max-w-9/12">This is a div with nine-twelfths maximum width.</div>
+    <div class="max-w-10/12">This is a div with ten-twelfths maximum width.</div>
+    <div class="max-w-11/12">This is a div with eleven-twelfths maximum width.</div>
+    <div class="max-w-screen">This is a div with screen maximum width.</div>
+    <div class="max-w-min">This is a div with minimum maximum width.</div>
+    <div class="max-w-max">This is a div with maximum maximum width.</div>
+    <div class="max-w-xs">This is a div with extra small maximum width.</div>
+    <div class="max-w-sm">This is a div with small maximum width.</div>
+    <div class="max-w-md">This is a div with medium maximum width.</div>
+    <div class="max-w-lg">This is a div with large maximum width.</div>
+    <div class="max-w-xl">This is a div with extra large maximum width.</div>
+    <div class="max-w-2xl">This is a div with 2xl maximum width.</div>
+    <div class="max-w-3xl">This is a div with 3xl maximum width.</div>
+    <div class="max-w-4xl">This is a div with 4xl maximum width.</div>
+    <div class="max-w-5xl">This is a div with 5xl maximum width.</div>
+    <div class="max-w-6xl">This is a div with 6xl maximum width.</div>
+    <div class="max-w-7xl">This is a div with 7xl maximum width.</div>
+    <div class="max-w-8xl">This is a div with 8xl maximum width.</div>
+    <div class="max-w-9xl">This is a div with 9xl maximum width.</div>
+    <div class="max-w-10xl">This is a div with 10xl maximum width.</div>
+    <div class="max-w-11xl">This is a div with 11xl maximum width.</div>
+    <div class="max-w-12xl">This is a div with 12xl maximum width.</div>
+```
+
+
+Height:
+```
+// Height in TailwindCSS is used to set the height of an element.
+// It provides a set of pre-defined classes that can be used to set the height.
+// For example, to set the height to a specific size, you can use the class 'h-{size}'.
+// You can also use the class 'h-{size}' with a specific height, such as 'h-1/2' for a height of 50%.
+// Here is an example of how to use height in TailwindCSS:
+    <div class="h-full">This is a div with full height.</div>
+    <div class="h-1/2">This is a div with half height.</div>
+    <div class="h-1/3">This is a div with one-third height.</div>
+    <div class="h-2/3">This is a div with two-thirds height.</div>
+    <div class="h-1/4">This is a div with one-fourth height.</div>
+    <div class="h-2/4">This is a div with two-fourths height.</div>
+    <div class="h-3/4">This is a div with three-fourths height.</div>
+    <div class="h-1/5">This is a div with one-fifth height.</div>
+    <div class="h-2/5">This is a div with two-fifths height.</div>
+    <div class="h-3/5">This is a div with three-fifths height.</div>
+    <div class="h-4/5">This is a div with four-fifths height.</div>
+    <div class="h-1/6">This is a div with one-sixth height.</div>
+    <div class="h-2/6">This is a div with two-sixths height.</div>
+    <div class="h-3/6">This is a div with three-sixths height.</div>
+    <div class="h-4/6">This is a div with four-sixths height.</div>
+    <div class="h-5/6">This is a div with five-sixths height.</div>
+    <div class="h-1/12">This is a div with one-twelfth height.</div>
+    <div class="h-2/12">This is a div with two-twelfths height.</div>
+    <div class="h-3/12">This is a div with three-twelfths height.</div>
+    <div class="h-4/12">This is a div with four-twelfths height.</div>
+    <div class="h-5/12">This is a div with five-twelfths height.</div>
+    <div class="h-6/12">This is a div with six-twelfths height.</div>
+    <div class="h-7/12">This is a div with seven-twelfths height.</div>
+    <div class="h-8/12">This is a div with eight-twelfths height.</div>
+    <div class="h-9/12">This is a div with nine-twelfths height.</div>
+    <div class="h-10/12">This is a div with ten-twelfths height.</div>
+    <div class="h-11/12">This is a div with eleven-twelfths height.</div>
+    <div class="h-screen">This is a div with screen height.</div>
+    <div class="h-min">This is a div with minimum height.</div>
+    <div class="h-max">This is a div with maximum height.</div>
+    <div class="h-xs">This is a div with extra small height.</div>
+    <div class="h-sm">This is a div with small height.</div>
+    <div class="h-md">This is a div with medium height.</div>
+    <div class="h-lg">This is a div with large height.</div>
+    <div class="h-xl">This is a div with extra large height.</div>
+    <div class="h-2xl">This is a div with 2xl height.</div>
+    <div class="h-3xl">This is a div with 3xl height.</div>
+    <div class="h-4xl">This is a div with 4xl height.</div>
+    <div class="h-5xl">This is a div with 5xl height.</div>
+    <div class="h-6xl">This is a div with 6xl height.</div>
+    <div class="h-7xl">This is a div with 7xl height.</div>
+    <div class="h-8xl">This is a div with 8xl height.</div>
+    <div class="h-9xl">This is a div with 9xl height.</div>
+    <div class="h-10xl">This is a div with 10xl height.</div>
+    <div class="h-11xl">This is a div with 11xl height.</div>
+    <div class="h-12xl">This is a div with 12xl height.</div>
+```
+
+
+Min-Height:
+```
+// Min-Height in TailwindCSS is used to set the minimum height of an element.
+// It provides a set of pre-defined classes that can be used to set the minimum height.
+// For example, to set the minimum height to a specific size, you can use the class 'min-h-{size}'.
+// You can also use the class 'min-h-{size}' with a specific minimum height, such as 'min-h-1/2' for a minimum height of 50%.
+// Here is an example of how to use minimum height in TailwindCSS:
+    <div class="min-h-full">This is a div with full minimum height.</div>
+    <div class="min-h-1/2">This is a div with half minimum height.</div>
+    <div class="min-h-1/3">This is a div with one-third minimum height.</div>
+    <div class="min-h-2/3">This is a div with two-thirds minimum height.</div>
+    <div class="min-h-1/4">This is a div with one-fourth minimum height.</div>
+    <div class="min-h-2/4">This is a div with two-fourths minimum height.</div>
+    <div class="min-h-3/4">This is a div with three-fourths minimum height.</div>
+    <div class="min-h-1/5">This is a div with one-fifth minimum height.</div>
+    <div class="min-h-2/5">This is a div with two-fifths minimum height.</div>
+    <div class="min-h-3/5">This is a div with three-fifths minimum height.</div>
+    <div class="min-h-4/5">This is a div with four-fifths minimum height.</div>
+    <div class="min-h-1/6">This is a div with one-sixth minimum height.</div>
+    <div class="min-h-2/6">This is a div with two-sixths minimum height.</div>
+    <div class="min-h-3/6">This is a div with three-sixths minimum height.</div>
+    <div class="min-h-4/6">This is a div with four-sixths minimum height.</div>
+    <div class="min-h-5/6">This is a div with five-sixths minimum height.</div>
+    <div class="min-h-1/12">This is a div with one-twelfth minimum height.</div>
+    <div class="min-h-2/12">This is a div with two-twelfths minimum height.</div>
+    <div class="min-h-3/12">This is a div with three-twelfths minimum height.</div>
+    <div class="min-h-4/12">This is a div with four-twelfths minimum height.</div>
+    <div class="min-h-5/12">This is a div with five-twelfths minimum height.</div>
+    <div class="min-h-6/12">This is a div with six-twelfths minimum height.</div>
+    <div class="min-h-7/12">This is a div with seven-twelfths minimum height.</div>
+    <div class="min-h-8/12">This is a div with eight-twelfths minimum height.</div>
+    <div class="min-h-9/12">This is a div with nine-twelfths minimum height.</div>
+    <div class="min-h-10/12">This is a div with ten-twelfths minimum height.</div>
+    <div class="min-h-11/12">This is a div with eleven-twelfths minimum height.</div>
+    <div class="min-h-screen">This is a div with screen minimum height.</div>
+    <div class="min-h-min">This is a div with minimum minimum height.</div>
+    <div class="min-h-max">This is a div with maximum minimum height.</div>
+    <div class="min-h-xs">This is a div with extra small minimum height.</div>
+    <div class="min-h-sm">This is a div with small minimum height.</div>
+    <div class="min-h-md">This is a div with medium minimum height.</div>
+    <div class="min-h-lg">This is a div with large minimum height.</div>
+    <div class="min-h-xl">This is a div with extra large minimum height.</div>
+    <div class="min-h-2xl">This is a div with 2xl minimum height.</div>
+    <div class="min-h-3xl">This is a div with 3xl minimum height.</div>
+    <div class="min-h-4xl">This is a div with 4xl minimum height.</div>
+    <div class="min-h-5xl">This is a div with 5xl minimum height.</div>
+    <div class="min-h-6xl">This is a div with 6xl minimum height.</div>
+    <div class="min-h-7xl">This is a div with 7xl minimum height.</div>
+    <div class="min-h-8xl">This is a div with 8xl minimum height.</div>
+    <div class="min-h-9xl">This is a div with 9xl minimum height.</div>
+    <div class="min-h-10xl">This is a div with 10xl minimum height.</div>
+    <div class="min-h-11xl">This is a div with 11xl minimum height.</div>
+    <div class="min-h-12xl">This is a div with 12xl minimum height.</div>
+```
+
+
+Max-Height:
+```
+// Max-Height in TailwindCSS is used to set the maximum height of an element. 
+// It provides a set of pre-defined classes that can be used to set the maximum height. 
+// For example, to set the maximum height to a specific size, you can use the class 'max-h-{size}'. 
+// You can also use the class 'max-h-{size}' with a specific maximum height, such as 'max-h-1/2' for a maximum height of 50%. 
+// Here is an example of how to use maximum height in TailwindCSS:
+    <div class="max-h-full">This is a div with full maximum height.</div>
+    <div class="max-h-1/2">This is a div with half maximum height.</div>
+    <div class="max-h-1/3">This is a div with one-third maximum height.</div>
+    <div class="max-h-2/3">This is a div with two-thirds maximum height.</div>
+    <div class="max-h-1/4">This is a div with one-fourth maximum height.</div>
+    <div class="max-h-2/4">This is a div with two-fourths maximum height.</div>
+    <div class="max-h-3/4">This is a div with three-fourths maximum height.</div>
+    <div class="max-h-1/5">This is a div with one-fifth maximum height.</div>
+    <div class="max-h-2/5">This is a div with two-fifths maximum height.</div>
+    <div class="max-h-3/5">This is a div with three-fifths maximum height.</div>
+    <div class="max-h-4/5">This is a div with four-fifths maximum height.</div>
+    <div class="max-h-1/6">This is a div with one-sixth maximum height.</div>
+    <div class="max-h-2/6">This is a div with two-sixths maximum height.</div>
+    <div class="max-h-3/6">This is a div with three-sixths maximum height.</div>
+    <div class="max-h-4/6">This is a div with four-sixths maximum height.</div>
+    <div class="max-h-5/6">This is a div with five-sixths maximum height.</div>
+    <div class="max-h-1/12">This is a div with one-twelfth maximum height.</div>
+    <div class="max-h-2/12">This is a div with two-twelfths maximum height.</div>
+    <div class="max-h-3/12">This is a div with three-twelfths maximum height.</div>
+    <div class="max-h-4/12">This is a div with four-twelfths maximum height.</div>
+    <div class="max-h-5/12">This is a div with five-twelfths maximum height.</div>
+    <div class="max-h-6/12">This is a div with six-twelfths maximum height.</div>
+    <div class="max-h-7/12">This is a div with seven-twelfths maximum height.</div>
+    <div class="max-h-8/12">This is a div with eight-twelfths maximum height.</div>
+    <div class="max-h-9/12">This is a div with nine-twelfths maximum height.</div>
+    <div class="max-h-10/12">This is a div with ten-twelfths maximum height.</div>
+    <div class="max-h-11/12">This is a div with eleven-twelfths maximum height.</div>
+    <div class="max-h-screen">This is a div with screen maximum height.</div>
+    <div class="max-h-min">This is a div with minimum maximum height.</div>
+    <div class="max-h-max">This is a div with maximum maximum height.</div>
+    <div class="max-h-xs">This is a div with extra small maximum height.</div>
+    <div class="max-h-sm">This is a div with small maximum height.</div>
+    <div class="max-h-md">This is a div with medium maximum height.</div>
+    <div class="max-h-lg">This is a div with large maximum height.</div>
+    <div class="max-h-xl">This is a div with extra large maximum height.</div>
+    <div class="max-h-2xl">This is a div with 2xl maximum height.</div>
+    <div class="max-h-3xl">This is a div with 3xl maximum height.</div>
+    <div class="max-h-4xl">This is a div with 4xl maximum height.</div>
+    <div class="max-h-5xl">This is a div with 5xl maximum height.</div>
+    <div class="max-h-6xl">This is a div with 6xl maximum height.</div>
+    <div class="max-h-7xl">This is a div with 7xl maximum height.</div>
+    <div class="max-h-8xl">This is a div with 8xl maximum height.</div>
+    <div class="max-h-9xl">This is a div with 9xl maximum height.</div>
+    <div class="max-h-10xl">This is a div with 10xl maximum height.</div>
+    <div class="max-h-11xl">This is a div with 11xl maximum height.</div>
+    <div class="max-h-12xl">This is a div with 12xl maximum height.</div>
+```
+
+
+SPACING:
+```
+
+// Padding and Margin are used to add space between an element and its content or other elements. Padding is
+// used to add space between an element and its content, while Margin is used to add space between an
+// element and other elements. Both Padding and Margin can be used to add space in all directions (top
+// bottom, left, right) or in a specific direction. The difference between Padding and Margin is that
+// Padding is used to add space between an element and its content, while Margin is used to add space
+// between an element and other elements.
+
+
+Padding:
+```
+// Padding in TailwindCSS is used to set the padding of an element.
+// It provides a set of pre-defined classes that can be used to set the padding.
+// For example, to set the padding to a specific size, you can use the class 'p-{size}'.
+// You can also use the class 'p-{size}' with a specific padding, such as 'p-1' for a padding of 0.25rem.
+// Here is an example of how to use padding in TailwindCSS:
+    <div class="p-1">This is a div with padding of 0.25rem.</div>
+    <div class="p-2">This is a div with padding of 0.5rem.</div>
+    <div class="p-3">This is a div with padding of 0.75rem.</div>
+    <div class="p-4">This is a div with padding of 1rem.</div>
+    <div class="p-5">This is a div with padding of 1.25rem.</div>
+    <div class="p-6">This is a div with padding of 1.5rem.</div>
+    <div class="p-7">This is a div with padding of 1.75rem.</div>
+    <div class="p-8">This is a div with padding of 2rem.</div>
+    <div class="p-9">This is a div with padding of 2.25rem.</div>
+    <div class="p-10">This is a div with padding of 2.5rem.</div>
+    <div class="p-11">This is a div with padding of 2.75rem.</div>
+    <div class="p-12">This is a div with padding of 3rem.</div>
+    <div class="p-14">This is a div with padding of 3.5rem.</div>
+    <div class="p-16">This is a div with padding of 4rem.</div>
+    <div class="p-20">This is a div with padding of 5rem.</div>
+    <div class="p-24">This is a div with padding of 6rem.</div>
+    <div class="p-28">This is a div with padding of 7rem.</div>
+    <div class="p-32">This is a div with padding of 8rem.</div>
+    <div class="p-36">This is a div with padding of 9rem.</div>
+    <div class="p-40">This is a div with padding of 10rem.</div>
+    <div class="p-44">This is a div with padding of 11rem.</div>
+    <div class="p-48">This is a div with padding of 12rem.</div>
+    <div class="p-52">This is a div with padding of 13rem.</div>
+    <div class="p-56">This is a div with padding of 14rem.</div>
+    <div class="p-60">This is a div with padding of 15rem.</div>
+    <div class="p-64">This is a div with padding of 16rem.</div>
+    <div class="p-72">This is a div with padding of 18rem.</div>
+    <div class="p-80">This is a div with padding of 20rem.</div>
+    <div class="p-96">This is a div with padding of 24rem.</div>
+    <div class="p-px">This is a div with padding of 1px.</div>
+    <div class="py-1">This is a div with vertical padding of 0.25rem.</div>
+    <div class="px-1">This is a div with horizontal padding of 0.25rem.</div>
+    <div class="pt-1">This is a div with top padding of 0.25rem.</div>
+    <div class="pr-1">This is a div with right padding of 0.25rem.</div>
+    <div class="pb-1">This is a div with bottom padding of 0.25rem.</div>
+    <div class="pl-1">This is a div with left padding of 0.25rem.</div>
+```
+
+
+Margin:
+```
+// Margin in TailwindCSS is used to set the margin of an element.
+// It provides a set of pre-defined classes that can be used to set the margin.
+// For example, to set the margin to a specific size, you can use the class 'm-{size}'.
+// You can also use the class 'm-{size}' with a specific margin, such as 'm-1' for a margin of 0.25rem.
+// Here is an example of how to use margin in TailwindCSS:
+    <div class="m-1">This is a div with margin of 0.25rem.</div>
+    <div class="m-2">This is a div with margin of 0.5rem.</div>
+    <div class="m-3">This is a div with margin of 0.75rem.</div>
+    <div class="m-4">This is a div with margin of 1rem.</div>
+    <div class="m-5">This is a div with margin of 1.25rem.</div>
+    <div class="m-6">This is a div with margin of 1.5rem.</div>
+    <div class="m-7">This is a div with margin of 1.75rem.</div>
+    <div class="m-8">This is a div with margin of 2rem.</div>
+    <div class="m-9">This is a div with margin of 2.25rem.</div>
+    <div class="m-10">This is a div with margin of 2.5rem.</div>
+    <div class="m-11">This is a div with margin of 2.75rem.</div>
+    <div class="m-12">This is a div with margin of 3rem.</div>
+    <div class="m-14">This is a div with margin of 3.5rem.</div>
+    <div class="m-16">This is a div with margin of 4rem.</div>
+    <div class="m-20">This is a div with margin of 5rem.</div>
+    <div class="m-24">This is a div with margin of 6rem.</div>
+    <div class="m-28">This is a div with margin of 7rem.</div>
+    <div class="m-32">This is a div with margin of 8rem.</div>
+    <div class="m-36">This is a div with margin of 9rem.</div>
+    <div class="m-40">This is a div with margin of 10rem.</div>
+    <div class="m-44">This is a div with margin of 11rem.</div>
+    <div class="m-48">This is a div with margin of 12rem.</div>
+    <div class="m-52">This is a div with margin of 13rem.</div>
+    <div class="m-56">This is a div with margin of 14rem.</div>
+    <div class="m-60">This is a div with margin of 15rem.</div>
+    <div class="m-64">This is a div with margin of 16rem.</div>
+    <div class="m-72">This is a div with margin of 18rem.</div>
+    <div class="m-80">This is a div with margin of 20rem.</div>
+    <div class="m-96">This is a div with margin of 24rem.</div>
+    <div class="m-px">This is a div with margin of 1px.</div>
+    <div class="my-1">This is a div with vertical margin of 0.25rem.</div>
+    <div class="mx-1">This is a div with horizontal margin of 0.25rem.</div>
+    <div class="mt-1">This is a div with top margin of 0.25rem.</div>
+    <div class="mr-1">This is a div with right margin of 0.25rem.</div>
+    <div class="mb-1">This is a div with bottom margin of 0.25rem.</div>
+    <div class="ml-1">This is a div with left margin of 0.25rem.</div>
+```
+
+
+Space Between:
+```
+// Space Between in TailwindCSS is used to set the space between elements.
+// It provides a set of pre-defined classes that can be used to set the space between elements.
+// For example, to set the space between elements to a specific size, you can use the class 'space-y-{size}'.
+// You can also use the class 'space-y-{size}' with a specific space between elements, such as 'space-y-1' for a space between elements of 0.25rem.
+// Here is an example of how to use space between elements in TailwindCSS:
+    <div class="space-y-1">
+    <div>This is a div with space between elements of 0.25rem.</div>
+    <div>This is another div with space between elements of 0.25rem.</div>
+    <div>This is yet another div with space between elements of 0.25rem.</div>
+    </div>
+
+// You can also use the class 'space-x-{size}' to set the space between elements horizontally.
+// For example, to set the space between elements horizontally to a specific size, you can use the class 'space-x-{size}'.
+// You can also use the class 'space-x-{size}' with a specific space between elements horizontally, such as 'space-x-1' for a space between elements horizontally of 0.25rem.
+// Here is an example of how to use space between elements horizontally in TailwindCSS:
+    <div class="flex space-x-1">
+    <div>This is a div with space between elements horizontally of 0.25rem.</div>
+    <div>This is another div with space between elements horizontally of 0.25rem.</div>
+    <div>This is yet another div with space between elements horizontally of 0.25rem.</div>
+    </div>
+```
+
+
+Flex:
+```
+
+Flex-Basis:
+```
+// Flex-Basis in TailwindCSS is used to set the initial main size of a flex item.
+// It provides a set of pre-defined classes that can be used to set the flex basis.
+// For example, to set the flex basis to a specific size, you can use the class 'basis-{size}'.
+// You can also use the class 'basis-{size}' with a specific flex basis, such as 'basis-1/2' for a flex basis of 50%.
+// Here is an example of how to use flex basis in TailwindCSS:
+    <div class="flex">
+        <div class="basis-1/2">This is a div with flex basis of 50%.</div>
+        <div class="basis-1/3">This is a div with flex basis of 33.33%.</div>
+        <div class="basis-2/3">This is a div with flex basis of 66.67%.</div>
+        <div class="basis-1/4">This is a div with flex basis of 25%.</div>
+        <div class="basis-2/4">This is a div with flex basis of 50%.</div>
+        <div class="basis-3/4">This is a div with flex basis of 75%.</div>
+        <div class="basis-1/5">This is a div with flex basis of 20%.</div>
+        <div class="basis-2/5">This is a div with flex basis of 40%.</div>
+        <div class="basis-3/5">This is a div with flex basis of 60%.</div>
+        <div class="basis-4/5">This is a div with flex basis of 80%.</div>
+        <div class="basis-1/6">This is a div with flex basis of 16.67%.</div>
+        <div class="basis-2/6">This is a div with flex basis of 33.33%.</div>
+        <div class="basis-3/6">This is a div with flex basis of 50%.</div>
+        <div class="basis-4/6">This is a div with flex basis of 66.67%.</div>
+        <div class="basis-5/6">This is a div with flex basis of 83.33%.</div>
+        <div class="basis-1/12">This is a div with flex basis of 8.33%.</div>
+        <div class="basis-2/12">This is a div with flex basis of 16.67%.</div>
+        <div class="basis-3/12">This is a div with flex basis of 25%.</div>
+        <div class="basis-4/12">This is a div with flex basis of 33.33%.</div>
+        <div class="basis-5/12">This is a div with flex basis of 41.67%.</div>
+        <div class="basis-6/12">This is a div with flex basis of 50%.</div>
+        <div class="basis-7/12">This is a div with flex basis of 58.33%.</div>
+        <div class="basis-8/12">This is a div with flex basis of 66.67%.</div>
+        <div class="basis-9/12">This is a div with flex basis of 75%.</div>
+        <div class="basis-10/12">This is a div with flex basis of 83.33%.</div>
+        <div class="basis-11/12">This is a div with flex basis of 91.67%.</div>
+        <div class="basis-full">This is a div with flex basis of 100%.</div>
+        <div class="basis-screen">This is a div with flex basis of the screen size.</div>
+        <div class="basis-min">This is a div with flex basis of the minimum size.</div>
+        <div class="basis-max">This is a div with flex basis of the maximum size.</div>
+        <div class="basis-xs">This is a div with flex basis of the extra small size.</div>
+        <div class="basis-sm">This is a div with flex basis of the small size.</div>
+        <div class="basis-md">This is a div with flex basis of the medium size.</div>
+        <div class="basis-lg">This is a div with flex basis of the large size.</div>
+        <div class="basis-xl">This is a div with flex basis of the extra large size.</div>
+        <div class="basis-2xl">This is a div with flex basis of the 2xl size.</div>
+        <div class="basis-3xl">This is a div with flex basis of the 3xl size.</div>
+        <div class="basis-4xl">This is a div with flex basis of the 4xl size.</div>
+        <div class="basis-5xl">This is a div with flex basis of the 5xl size.</div>
+        <div class="basis-6xl">This is a div with flex basis of the 6xl size.</div>
+        <div class="basis-7xl">This is a div with flex basis of the 7xl size.</div>
+        <div class="basis-8xl">This is a div with flex basis of the 8xl size.</div>
+        <div class="basis-9xl">This is a div with flex basis of the 9xl size.</div>
+        <div class="basis-10xl">This is a div with flex basis of the 10xl size.</div>
+        <div class="basis-11xl">This is a div with flex basis of the 11xl size.</div>
+        <div class="basis-12xl">This is a div with flex basis of the 12xl size.</div>
+    </div>
+```
+
+
+Flex-Direction:
+```
+// Flex-Direction in TailwindCSS is used to set the direction of flex items.
+// It provides a set of pre-defined classes that can be used to set the flex direction.
+// For example, to set the flex direction to row, you can use the class 'flex-row'.
+// To set the flex direction to row-reverse, you can use the class 'flex-row-reverse'.
+// To set the flex direction to column, you can use the class 'flex-col'.
+// To set the flex direction to column-reverse, you can use the class 'flex-col-reverse'.
+// Here is an example of how to use flex direction in TailwindCSS:
+
+    <div class="flex flex-row">
+        <div>This is a div with flex direction of row.</div>
+        <div>This is another div with flex direction of row.</div>
+        <div>This is yet another div with flex direction of row.</div>
+    </div>
+
+    <div class="flex flex-row-reverse">
+        <div>This is a div with flex direction of row-reverse.</div>
+        <div>This is another div with flex direction of row-reverse.</div>
+        <div>This is yet another div with flex direction of row-reverse.</div>
+    </div>
+
+    <div class="flex flex-col">
+        <div>This is a div with flex direction of column.</div>
+        <div>This is another div with flex direction of column.</div>
+        <div>This is yet another div with flex direction of column.</div>
+    </div>
+
+    <div class="flex flex-col-reverse">
+        <div>This is a div with flex direction of column-reverse.</div>
+        <div>This is another div with flex direction of column-reverse.</div>
+        <div>This is yet another div with flex direction of column-reverse.</div>
+    </div>
+```
+
+
+Flex-Wrap:
+```
+// Flex-Wrap in TailwindCSS is used to set whether flex items should wrap or not.
+// It provides a set of pre-defined classes that can be used to set the flex wrap.
+// For example, to set the flex wrap to wrap, you can use the class 'flex-wrap'.
+// To set the flex wrap to wrap-reverse, you can use the class 'flex-wrap-reverse'.
+// To set the flex wrap to no-wrap, you can use the class 'flex-wrap-none'.
+// Here is an example of how to use flex wrap in TailwindCSS:
+
+// Flex-Wrap: wrap
+// This will wrap the flex items to a new line when there is not enough space.
+    <div class="flex flex-wrap">
+        <div>This is a div with flex wrap of wrap.</div>
+        <div>This is another div with flex wrap of wrap.</div>
+        <div>This is yet another div with flex wrap of wrap.</div>
+    </div>
+
+// Flex-Wrap: wrap-reverse
+// This will wrap the flex items to a new line when there is not enough space, but in reverse order.
+    <div class="flex flex-wrap-reverse">
+        <div>This is a div with flex wrap of wrap-reverse.</div>
+        <div>This is another div with flex wrap of wrap-reverse.</div>
+        <div>This is yet another div with flex wrap of wrap-reverse.</div>
+    </div>
+
+// Flex-Wrap: no-wrap
+// This will not wrap the flex items to a new line when there is not enough space.
+    <div class="flex flex-wrap-none">
+        <div>This is a div with flex wrap of no-wrap.</div>
+        <div>This is another div with flex wrap of no-wrap.</div>
+        <div>This is yet another div with flex wrap of no-wrap.</div>
+    </div>
+```
+
+
+Flex-Grow:
+```
+// Flex-Grow in TailwindCSS is used to set the ability of a flex item to grow and fill the available space.
+// It provides a set of pre-defined classes that can be used to set the flex grow.
+// For example, to set the flex grow to 0, you can use the class 'flex-grow-0'.
+// To set the flex grow to 1, you can use the class 'flex-grow'.
+// Here is an example of how to use flex grow in TailwindCSS:
+
+// Flex-Grow: 0
+// This will not allow the flex item to grow and fill the available space.
+    <div class="flex">
+        <div class="flex-grow-0">This is a div with flex grow of 0.</div>
+        <div class="flex-grow">This is a div with flex grow of 1.</div>
+    </div>
+
+// Flex-Grow: 1
+// This will allow the flex item to grow and fill the available space.
+    <div class="flex">
+        <div class="flex-grow">This is a div with flex grow of 1.</div>
+        <div class="flex-grow-0">This is a div with flex grow of 0.</div>
+    </div>
+```
+
+
+Flex-Shrink:
+```
+// Flex-Shrink in TailwindCSS is used to set the ability of a flex item to shrink and fit the available space.
+// It provides a set of pre-defined classes that can be used to set the flex shrink.
+// For example, to set the flex shrink to 0, you can use the class 'flex-shrink-0'.
+// To set the flex shrink to 1, you can use the class 'flex-shrink'.
+// Here is an example of how to use flex shrink in TailwindCSS:
+
+// Flex-Shrink: 0
+// This will not allow the flex item to shrink and fit the available space.
+    <div class="flex">
+        <div class="flex-shrink-0">This is a div with flex shrink of 0.</div>
+        <div class="flex-shrink">This is a div with flex shrink of 1.</div>
+    </div>
+
+// Flex-Shrink: 1
+// This will allow the flex item to shrink and fit the available space.
+    <div class="flex">
+        <div class="flex-shrink">This is a div with flex shrink of 1.</div>
+        <div class="flex-shrink-0">This is a div with flex shrink of 0.</div>
+    </div>
+```
+
+
+Order:
+```
+// Order in TailwindCSS is used to set the order of flex items.
+// It provides a set of pre-defined classes that can be used to set the order.
+// For example, to set the order to a specific number, you can use the class 'order-{number}'.
+// Here is an example of how to use order in TailwindCSS:
+    <div class="flex">
+        <div class="order-1">This is a div with order of 1.</div>
+        <div class="order-2">This is a div with order of 2.</div>
+        <div class="order-3">This is a div with order of 3.</div>
+    </div>
+
+// Description: 
+// The order property is used to specify the order of a flex item. 
+// The order property can take any integer value (positive, negative, or zero). 
+// The default value is 0. A higher number means the item will be displayed later in the order, while a lower number means it will be displayed earlier.
+```
+
+
+Justify-Content:
+```
+// Justify Content in TailwindCSS is used to set the justification of flex items.
+// It provides a set of pre-defined classes that can be used to set the justify content.
+// For example, to set the justify content to start, you can use the class 'justify-start'.
+// To set the justify content to end, you can use the class 'justify-end'.
+// To set the justify content to center, you can use the class 'justify-center'.
+// To set the justify content to space-between, you can use the class 'justify-between'.
+// To set the justify content to space-around, you can use the class 'justify-around'.
+// To set the justify content to space-evenly, you can use the class 'justify-evenly'.
+
+// Description: 
+// The justify-content property is used to specify the justification of flex items. 
+// The justify-content property can take the following values: start, end, center, space-between, space-around, space-evenly. 
+// The default value is start.
+
+// Here is an example of how to use justify content in TailwindCSS:
+    <div class="flex justify-start">
+        <div>This is a div with justify content of start.</div>
+        <div>This is another div with justify content of start.</div>
+        <div>This is yet another div with justify content of start.</div>
+    </div>
+
+    <div class="flex justify-end">
+        <div>This is a div with justify content of end.</div>
+        <div>This is another div with justify content of end.</div>
+        <div>This is yet another div with justify content of end.</div>
+    </div>
+
+    <div class="flex justify-center">
+        <div>This is a div with justify content of center.</div>
+        <div>This is another div with justify content of center.</div>
+        <div>This is yet another div with justify content of center.</div>
+    </div>
+
+    <div class="flex justify-between">
+        <div>This is a div with justify content of space-between.</div>
+        <div>This is another div with justify content of space-between.</div>
+        <div>This is yet another div with justify content of space-between.</div>
+    </div>
+
+    <div class="flex justify-around">
+        <div>This is a div with justify content of space-around.</div>
+        <div>This is another div with justify content of space-around.</div>
+        <div>This is yet another div with justify content of space-around.</div>
+    </div>
+
+    <div class="flex justify-evenly">
+        <div>This is a div with justify content of space-evenly.</div>
+        <div>This is another div with justify content of space-evenly.</div>
+        <div>This is yet another div with justify content of space-evenly.</div>
+    </div>
+```
+
+
+Align-Items:
+```
+// Align Items in TailwindCSS is used to set the alignment of flex items.
+// It provides a set of pre-defined classes that can be used to set the align items.
+// For example, to set the align items to start, you can use the class 'items-start'.
+// To set the align items to end, you can use the class 'items-end'.
+// To set the align items to center, you can use the class 'items-center'.
+// To set the align items to baseline, you can use the class 'items-baseline'.
+// To set the align items to stretch, you can use the class 'items-stretch'.
+
+// Description: 
+// The align-items property is used to specify the alignment of flex items. 
+// The align-items property can take the following values: start, end, center, baseline, stretch. 
+// The default value is stretch.
+
+// Here is an example of how to use align items in TailwindCSS:
+    <div class="flex items-start">
+        <div>This is a div with align items of start.</div>
+        <div>This is another div with align items of start.</div>
+        <div>This is yet another div with align items of start.</div>
+    </div>
+
+    <div class="flex items-end">
+        <div>This is a div with align items of end.</div>
+        <div>This is another div with align items of end.</div>
+        <div>This is yet another div with align items of end.</div>
+    </div>
+
+    <div class="flex items-center">
+        <div>This is a div with align items of center.</div>
+        <div>This is another div with align items of center.</div>
+        <div>This is yet another div with align items of center.</div>
+    </div>
+
+    <div class="flex items-baseline">
+        <div>This is a div with align items of baseline.</div>
+        <div>This is another div with align items of baseline.</div>
+        <div>This is yet another div with align items of baseline.</div>
+    </div>
+
+    <div class="flex items-stretch">
+        <div>This is a div with align items of stretch.</div>
+        <div>This is another div with align items of stretch.</div>
+        <div>This is yet another div with align items of stretch.</div>
+    </div>
+```
+
+
+Align-Content:
+```
+// Align Content in TailwindCSS is used to set the alignment of flex lines.
+// It provides a set of pre-defined classes that can be used to set the align content.
+// For example, to set the align content to start, you can use the class 'content-start'.
+// To set the align content to end, you can use the class 'content-end'.
+// To set the align content to center, you can use the class 'content-center'.
+// To set the align content to space-between, you can use the class 'content-between'.
+// To set the align content to space-around, you can use the class 'content-around'.
+// To set the align content to space-evenly, you can use the class 'content-evenly'.
+
+// Description: 
+// The align-content property is used to specify the alignment of flex lines. 
+// The align-content property can take the following values: start, end, center, space-between, space-around, space-evenly. 
+// The default value is start.
+// Here is an example of how to use align content in TailwindCSS:
+    <div class="flex flex-wrap content-start">
+        <div>This is a div with align content of start.</div>
+        <div>This is another div with align content of start.</div>
+        <div>This is yet another div with align content of start.</div>
+    </div>
+
+    <div class="flex flex-wrap content-end">
+        <div>This is a div with align content of end.</div>
+        <div>This is another div with align content of end.</div>
+        <div>This is yet another div with align content of end.</div>
+    </div>
+
+    <div class="flex flex-wrap content-center">
+        <div>This is a div with align content of center.</div>
+        <div>This is another div with align content of center.</div>
+        <div>This is yet another div with align content of center.</div>
+    </div>
+
+    <div class="flex flex-wrap content-between">
+        <div>This is a div with align content of space-between.</div>
+        <div>This is another div with align content of space-between.</div>
+        <div>This is yet another div with align content of space-between.</div>
+    </div>
+
+    <div class="flex flex-wrap content-around">
+        <div>This is a div with align content of space-around.</div>
+        <div>This is another div with align content of space-around.</div>
+        <div>This is yet another div with align content of space-around.</div>
+    </div>
+
+    <div class="flex flex-wrap content-evenly">
+        <div>This is a div with align content of space-evenly.</div>
+        <div>This is another div with align content of space-evenly.</div>
+        <div>This is yet another div with align content of space-evenly.</div>
+    </div>
+```
+
+
+Backgrounds:
+```
+
+Background-Attachment:
+```
+// Background Attachment in TailwindCSS is used to set the attachment of the background image.
+// It provides a set of pre-defined classes that can be used to set the background attachment.
+// For example, to set the background attachment to fixed, you can use the class 'bg-fixed'.
+// To set the background attachment to local, you can use the class 'bg-local'.
+// To set the background attachment to scroll, you can use the class 'bg-scroll'.
+
+// Description: 
+// The background-attachment property is used to specify the attachment of the background image. 
+// The background-attachment property can take the following values: fixed, local, scroll. 
+// The default value is scroll.
+// Background Attachment in TailwindCSS is used to set the attachment of the background image.
+// It provides a set of pre-defined classes that can be used to set the background attachment.
+// For example, to set the background attachment to fixed, you can use the class 'bg-fixed'.
+// To set the background attachment to local, you can use the class 'bg-local'.
+// To set the background attachment to scroll, you can use the class 'bg-scroll'.
+
+// Local:
+// The local scroll value means that the background image will scroll with the element's content.
+// This means that when you scroll the element, the background image will also scroll with it.
+
+// Fixed:
+// The fixed value means that the background image will be fixed in place and will not scroll with the element's content.
+// This means that when you scroll the element, the background image will remain in the same position.
+
+// Scroll:
+// The scroll value means that the background image will scroll with the element's content, but it will also be affected by the element's scroll position.
+// This means that when you scroll the element, the background image will scroll with it, but it will also be clipped by the element's boundaries.
+
+// Here is an example of how to use background attachment in TailwindCSS:
+    <div class="bg-fixed" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background attachment of fixed.
+    </div>
+
+    <div class="bg-local" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background attachment of local.
+    </div>
+
+    <div class="bg-scroll" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background attachment of scroll.
+    </div>
+```
+
+
+Background-Color:
+```
+// Background Color in TailwindCSS is used to set the background color of an element.
+// It provides a set of pre-defined classes that can be used to set the background color.
+// For example, to set the background color to a specific color, you can use the class 'bg-{color}'.
+// You can also use the class 'bg-{color}' with a specific background color, such as 'bg-red-500' for a background color of #ff0000.
+// Here is an example of how to use background color in TailwindCSS:
+    <div class="bg-red-500">This is a div with background color of #ff0000.</div>
+    <div class="bg-blue-500">This is a div with background color of #0000ff.</div>
+    <div class="bg-green-500">This is a div with background color of #00ff00.</div>
+    <div class="bg-yellow-500">This is a div with background color of #ffff00.</div>
+    <div class="bg-purple-500">This is a div with background color of #ff00ff.</div>
+    <div class="bg-pink-500">This is a div with background color of #ff69b4.</div>
+    <div class="bg-orange-500">This is a div with background color of #ffa07a.</div>
+    <div class="bg-gray-500">This is a div with background color of #808080.</div>
+    <div class="bg-black">This is a div with background color of #000000.</div>
+    <div class="bg-white">This is a div with background color of #ffffff.</div>
+    <div class="bg-transparent">This is a div with background color of transparent.</div>
+    <div class="bg-current">This is a div with background color of currentColor.</div>
+```
+
+
+Background-Origin:
+```
+// Background Origin in TailwindCSS is used to set the origin of the background image.
+// It provides a set of pre-defined classes that can be used to set the background origin.
+// For example, to set the background origin to border-box, you can use the class 'bg-origin-border'.
+// To set the background origin to content-box, you can use the class 'bg-origin-content'.
+// To set the background origin to padding-box, you can use the class 'bg-origin-padding'.
+
+// Description: 
+// The background-origin property is used to specify the origin of the background image. 
+// The background-origin property can take the following values: border-box, content-box, padding-box. 
+// The default value is padding-box.
+
+// Here is an example of how to use background origin in TailwindCSS:
+    <div class="bg-origin-border" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background origin of border-box.
+    </div>
+
+    <div class="bg-origin-content" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background origin of content-box.
+    </div>
+
+    <div class="bg-origin-padding" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background origin of padding-box.
+    </div>:
+```
+
+
+Background-Clip:
+```
+// Background Clip in TailwindCSS is used to set the clipping of the background image.
+// It provides a set of pre-defined classes that can be used to set the background clip.
+// For example, to set the background clip to border-box, you can use the class 'bg-clip-border'.
+// To set the background clip to content-box, you can use the class 'bg-clip-content'.
+// To set the background clip to padding-box, you can use the class 'bg-clip-padding'.
+// To set the background clip to text, you can use the class 'bg-clip-text'.
+
+// Description: 
+// The background-clip property is used to specify the clipping of the background image. 
+// The background-clip property can take the following values: border-box, content-box, padding-box, text. 
+// The default value is border-box.
+
+// Here is an example of how to use background clip in TailwindCSS:
+    <div class="bg-clip-border" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background clip of border-box.
+    </div>
+
+    <div class="bg-clip-content" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background clip of content-box.
+    </div>
+
+    <div class="bg-clip-padding" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background clip of padding-box.
+    </div>
+
+    <div class="bg-clip-text" style="background-image: url('https://picsum.photos/200/300'); height: 100vh; border: 10px solid black;">
+        This is a div with background clip of text.
+    </div>
+```
+
+
+Background-Size:
+```
+// Background Size in TailwindCSS is used to set the size of the background image.
+// It provides a set of pre-defined classes that can be used to set the background size.
+// For example, to set the background size to a specific size, you can use the class 'bg-{size}'.
+// You can also use the class 'bg-{size}' with a specific background size, such as 'bg-cover' for a background size of cover.
+// Here is an example of how to use background size in TailwindCSS:
+    <div class="bg-cover" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background size of cover.
+    </div>
+
+// Description: 
+// The background-size property is used to specify the size of the background image. 
+// The background-size property can take the following values: auto, cover, contain, <length>, <percentage>, inherit, initial, unset. 
+// The default value is auto.
+
+// Here is an example of how to use background size in TailwindCSS:
+    <div class="bg-cover" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background size of cover.
+    </div>
+
+    <div class="bg-contain" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background size of contain.
+    </div>
+
+    <div class="bg-auto" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background size of auto.
+    </div>
+```
+
+
+Background-Image:
+```
+// Background Image in TailwindCSS is used to set the background image of an element.
+// It provides a set of pre-defined classes that can be used to set the background image.
+// For example, to set the background image to a specific image, you can use the class 'bg-{image}'.
+// You can also use the class 'bg-{image}' with a specific background image, such as 'bg-image' for a background image of url('https://picsum.photos/200/300').
+
+// Description: 
+// The background-image property is used to specify the background image of an element. 
+// The background-image property can take the following values: url(), linear-gradient(), radial-gradient(), repeating-linear-gradient(), repeating-radial-gradient(), inherit, initial, unset. 
+// The default value is none.
+
+// Here is an example of how to use background image in TailwindCSS:
+    <div class="bg-image" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300').
+    </div>
+
+    <div class="bg-no-repeat" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300') and no repeat.
+    </div>
+
+    <div class="bg-repeat" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300') and repeat.
+    </div>
+
+    <div class="bg-repeat-x" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300') and repeat x.
+    </div>
+
+    <div class="bg-repeat-y" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300') and repeat y.
+    </div>
+
+    <div class="bg-no-repeat-x" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300') and no repeat x.
+    </div>
+
+    <div class="bg-no-repeat-y" style="background-image: url('https://picsum.photos/200/300'); height: 100vh;">
+        This is a div with background image of url('https://picsum.photos/200/300') and no repeat y.
+    </div>
+```
