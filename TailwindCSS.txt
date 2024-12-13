@@ -1241,3 +1241,24 @@ Background-Image:
         This is a div with background image of url('https://picsum.photos/200/300') and no repeat y.
     </div>
 ```
+
+
+Breakpoints:
+```
+// Breakpoints in TailwindCSS are used to define the different screen sizes that your design will be responsive to.
+// They are defined using the @media rule and can be used to apply different styles to different screen sizes.
+// For example, you can use the @media rule to apply different font sizes to different screen sizes.
+
+// Description:
+    sm breakpoint: 640px
+    md breakpoint: 768px
+    lg breakpoint: 1024px
+    xl breakpoint: 1280px
+    2xl breakpoint: 1536px
+
+Breakpoints Example:
+```
+    <div class="text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+        This is a div with different font sizes for different screen sizes.
+    </div>
+```
